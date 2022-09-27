@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@chakra-ui/react": "^2.3.4",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "axios": "^0.27.2",
+    "framer-motion": "^7.4.0",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.4.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "styled-components": "^5.3.5"
+  }
+}
