@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.headContainer{
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.heading{
+    font-size: 48px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.subheading{
+    font-size: 22px;
+    color: #767676;
+    font-weight: 400;
+}
+
+.toggler{
+    /* border:1px solid red; */
+    background-color: #F2FBF9;
+    width:175px;
+    height: 38px;
+    border-radius: 12px;
+    margin:auto;
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 20px;
+    width: 180px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.currency>img{
+    height: 15px;
+}
+
+.currency>p{
+    font-size: 16px;
+    color: #7c7c7c;
+}
+
+.qAndA{
+    /* border: 1px solid red; */
+    height:700px;
+    width: 95%;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qAndA>div{
+    /* border: 1px solid black; */
+    /* width: 43%; */
+    height: 100%;
+}
+
+.qAndALeft{
+    width: 40%;
+    text-align: left;
+}
+
+.qAndALeft h2{
+    font-size: 36px;
+    color: #333333;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.qAndALeft h4{
+    font-size: 18px;
+    color: #767676;
+}
+
+.imgcont{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.qAndARight{
+    width: 50%;
+    padding-top: 70px;
+    text-align: left;
+}
+
+.endpart{
+    border:1px solid red;
+    height: 260px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.endpartLeft{
+    height: 100%;
+    width: 60%;
+    border: 1px solid black;
+    text-align: left;
+}
+.endpartRight{
+    height: 100%;
+    width: 35%;
+    border: 1px solid black;
+}
+
+.endpartLeft h2{
+    font-size: 36px;
+    color: #333333;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.endpartLeft h4{
+    font-size: 18px;
+    color: #767676;
+}
+
+.inputbox{
+    border: 0.1px solid rgb(110, 108, 108);
+    width: 360px;
+    height: 48px;
+    margin-top: 30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputbox input{
+    width: 80%;
+    height: 80%;
+}
+
+input:focus{
+    outline: none;
+}
