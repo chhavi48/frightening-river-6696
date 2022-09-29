@@ -1,0 +1,98 @@
+
+
+
+
+
+.time:hover{
+    background-color: green;
+    color: white
+}
+
+.videos{
+    background-color: white;
+    color: #57BB71;
+    height:45px;
+}
+
+.detail-data{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height:650px;
+    width:550px;
+    margin: auto;
+    margin-top: 150px;
+    
+    
+}
+
+
+
+
+
+
+
+
+.leftSignupDiv{
+    /* max-height: auto; */
+    width: 100%;
+    height:auto;
+    margin: auto;
+    margin-top: 80px;
+}
+.leftSignupDiv>h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: #333333;
+    margin-left: 12%;
+    /* padding-left: 42%; */
+}
+.leftSignupDiv>p{
+    font-size: 18px;
+    color: #767676;
+    margin-top: 5px;
+   
+    margin-left: -120px;
+}
+
+.signupInputDiv{
+    display: flex;
+    gap: 10px;
+    margin-left: 28%;
+}
+.signupInputDiv>input{
+    height: 48px;
+    width: 308px;
+}
+
+.signupInputDiv>div{
+    /* height: 48px;
+    width: 152px;
+    display: flex; */
+    justify-content: center;
+    align-items: center;
+    background-color: #57BB71;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.signupInputDiv+div{
+    display: flex;
+    height:20px;
+    gap: 8px;
+    margin-top: 10px;
+    margin-left:40%;
+}
+.signupInputDiv+div>p{
+    color: #767676;
+    font-size: 17px;
+    
+}
+
+.Chokan{
+    margin-top: 2%;
+}
+
+.container{
+    border:1px solid red;
+    justify-content: center;
+}

@@ -1,11 +1,13 @@
-import Landing from "./Compoents/Landing/Landing";
+import Demo from "./Pages/DemoPage";
+
+
 
 function App() {
   return (
     <div className="App">
-   <Landing/>
+  
 
-
+<Demo/>
     </div>
   );
 }
