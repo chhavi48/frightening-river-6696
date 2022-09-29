@@ -22,6 +22,7 @@ const Routing = () => {
 				<Route path='/settings' element={<Settings />} />
 				<Route path='/clients' element={<Clients />} />
 			</Routes>
+			<h1>Hello</h1>
 		</>
 	);
 };
