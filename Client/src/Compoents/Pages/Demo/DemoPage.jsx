@@ -40,7 +40,7 @@ export default function CallToActionWithIllustration() {
 						 fontWeight={600}
 						 fontSize={"3rem"}
 							px={6}
-							lineHeight={'110%'}
+							lineHeight={'109%'}
 							marginTop={"60px"}
 							bg={"white"}
 							color={"black"}
