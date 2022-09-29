@@ -11,11 +11,11 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import {
-  IoAnalyticsSharp,
+
   IoLogoBitcoin,
-  IoSearchSharp,
+
 } from "react-icons/io5";
-import { ReactElement } from "react";
+
 import { IoMdTime, IoMdFunnel } from "react-icons/io";
 import { BsFillFolderFill } from "react-icons/bs";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";

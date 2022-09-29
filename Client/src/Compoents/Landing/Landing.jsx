@@ -2,11 +2,11 @@ import React from 'react';
 
 import  Navbar  from '../Navbar/Navbar'
 
-import Frontpage from '../Frontpage/Frontpage'
-import Section from '../Section/Section';
-import Test from '../Section/Section';
-import SplitScreen from '../Mproject/Mproject';
-import Footer from '../../Footer/Footer';
+import Frontpage from "../Pages/Frontpage/Frontpage"
+
+import Test from '../Pages/Section/Section';
+import SplitScreen from '../Pages/Mproject/Mproject';
+import Footer from '../Pages/Footer/Footer';
 
 const Landing = () => {
   return (

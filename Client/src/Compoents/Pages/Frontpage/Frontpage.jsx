@@ -35,7 +35,7 @@ const Frontpage = () => {
       </div>
       <div className="google">
         <FcGoogle />
-        <a href="#">Or sign up with Google Account</a>{" "}
+        <a href="#/">Or sign up with Google Account</a>{" "}
       </div>
                  <SplitWithImage/>
       <div className="head2">
