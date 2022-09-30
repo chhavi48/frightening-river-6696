@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Landing from "../Compoents/Landing/Landing";
 import Clients from "./CRM/Clients";
 import Home from "./CRM/Home";
+import ProjectAdd from "./CRM/ProjectAdd";
 import Projects from "./CRM/Projects";
 import Reports from "./CRM/Reports";
 import Settings from "./CRM/Settings";
@@ -19,6 +20,7 @@ const Routing = () => {
 				<Route path='/home' element={<Home />} />
 				<Route path='/time' element={<Time />} />
 				<Route path='/projects' element={<Projects />} />
+				<Route path='/projects/create' element={<ProjectAdd />} />
 				<Route path='/reports' element={<Reports />} />
 				<Route path='/team' element={<Team />} />
 			

@@ -10,7 +10,16 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,Box
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
+import {
+  List,
+  ListItem,
+  ListIcon,
+  OrderedList,
+  UnorderedList,
+} from '@chakra-ui/react';
+// import { BsCircleFill } from 'react-icons/fa'
+import { BsCircleFill, MdCheckCircle } from "react-icons/bs";
 
 const PricesPage = () => {
   return (
@@ -178,13 +187,51 @@ const PricesPage = () => {
          <div className={styles.endpartLeft}>
          <h2 className={styles.heading}>Take control of your time with Everhour</h2>
           <h4 className={styles.subheading}>Beautiful integrations. Intuitive interface. No unexpected fees</h4>
-            <div>
+            <div className={styles.tryfreeCont}>
                   <div className={styles.inputbox}>
                   <input placeholder='Work email...' type="email" />
                   </div>
+                  <div className={styles.tryfreeBtn}>
+                    <p>Try Free</p>
+                  </div>
+            </div>
+            <div className={styles.googleLog}>
+                <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" />
+                
+                <Link color='#767676' href='#'>
+                 links can live inline with text
+                </Link>
             </div>
          </div>
-         <div className={styles.endpartRight}></div>
+         <div className={styles.endpartRight}>
+                      <List spacing={3}>
+                <ListItem>
+                  <ListIcon as={BsCircleFill} color='green.500' />
+                  Track time from the apps you already use
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={BsCircleFill} color='green.500' />
+                  Know where your team’s time is going
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={BsCircleFill} color='green.500' />
+                  Keep projects on budget
+                </ListItem>
+                {/* You can also use custom icons from react-icons */}
+                <ListItem>
+                  <ListIcon as={BsCircleFill} color='green.500' />
+                  Increase transparency
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={BsCircleFill} color='green.500' />
+                  Make your workflow more efficient
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={BsCircleFill} color='green.500' />
+                  Spot burnout before it happens
+                </ListItem>
+              </List>
+         </div>
         </div>
     </div>
   )
