@@ -16,7 +16,7 @@ import {
 	Square,
 } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
-export default function CallToActionWithIllustration() {
+export default function Demo() {
 	const CircleIcon = (props) => (
 		<Icon viewBox="0 0 200 200" {...props}>
 			<path

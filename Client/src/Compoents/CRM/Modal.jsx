@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Form, Modal, Button } from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { getdeleteProject, getEditProject } from "../../Redux/App/app.actions";
 import "./Header.css";
-const Modals = ({ name,member }) => {
-	console.log(name,member, "item");
+const Modals = ({ name, member, id }) => {
 	const [smShow, setSmShow] = useState(false);
+	const dispatch = useDispatch();
 	// form data
 	const [formData, setData] = useState({});
 	const onChangeHandler = (e) => {
@@ -12,7 +14,22 @@ const Modals = ({ name,member }) => {
 	};
 	const onSubmitHandler = (e) => {
 		e.preventDefault();
-		console.log(formData);
+		dispatch(getEditProject(id, formData))
+			.then((res) => {
+				setSmShow(false);
+			})
+			.catch((e) => {
+				console.log(e);
+			});
+	};
+	const getdeleteProjectRequest = () => {
+		dispatch(getdeleteProject(id))
+			.then((res) => {
+				setSmShow(false);
+			})
+			.catch((e) => {
+				console.log(e);
+			});
 	};
 	return (
 		<div className='button-div'>
@@ -58,7 +75,7 @@ const Modals = ({ name,member }) => {
 							<Button m='2' variant='primary' type='submit'>
 								Edit
 							</Button>
-							<Button m='2' variant='primary'>
+							<Button m='2' variant='primary' onClick={getdeleteProjectRequest}>
 								Delete
 							</Button>
 						</Form.Group>
