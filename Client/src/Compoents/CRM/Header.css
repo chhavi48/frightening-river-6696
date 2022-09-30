@@ -130,3 +130,25 @@ body {
     font-weight: 700;
     font-size: 22px;
 }
+
+.button-div{
+    position: relative;
+}
+
+.title-button{
+    padding: 15px;
+    position: absolute;
+    top: -42px;
+    left: 80px;
+    font-weight: 700;
+}
+.flex-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-space-between{
+    margin-top:20px;
+    display: flex;;
+    justify-content: space-between;
+    font-weight: 500;
+}
