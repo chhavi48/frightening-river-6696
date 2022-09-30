@@ -1,5 +1,12 @@
 import axios from "axios";
-import { PROJECT_ERROR, PROJECT_REQUEST, PROJECT_SUCCESS } from "./app.types";
+import {
+	CLIENTS_ERROR,
+	CLIENTS_REQUEST,
+	CLIENTS_SUCCESS,
+	PROJECT_ERROR,
+	PROJECT_REQUEST,
+	PROJECT_SUCCESS,
+} from "./app.types";
 
 const baseURL = "http://localhost:8080";
 
@@ -24,19 +31,24 @@ export const getdeleteProject = (id) => async (dispatch) => {
 	return await axios.delete(`${baseURL}/project/delete/${id}`);
 };
 
-export const getCreateProject = (payload) =>async (dispatch)=> {
+export const getCreateProject = (payload) => async (dispatch) => {
 	return await axios.post(`${baseURL}/project/create`, payload);
-}
+};
+
+// client data
 
 export const getClientsRequest = () => (dispatch) => {
-	dispatch({ type: PROJECT_REQUEST });
+	dispatch({ type: CLIENTS_REQUEST });
 	axios
 		.get(`${baseURL}/client`)
 		.then((res) => {
-			// console.log(res.data);
-			dispatch({ type: PROJECT_SUCCESS, payload: res.data });
+			dispatch({ type: CLIENTS_SUCCESS, payload: res.data });
 		})
 		.catch((e) => {
-			dispatch({ type: PROJECT_ERROR });
+			dispatch({ type: CLIENTS_ERROR });
 		});
+};
+
+export const getCreateClient = (payload) => async (dispatch) => {
+	return await axios.post(`${baseURL}/client/create`, payload);
 };
