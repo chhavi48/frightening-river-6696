@@ -1,6 +1,4 @@
-<<<<<<< HEAD
- 
-=======
+
 const express = require("express");
 const { connection } = require("./config/db");
 const { clientController } = require("./route/client");
@@ -31,4 +29,4 @@ app.listen(PORT, async () => {
 		console.log("Does not Connect To Database", e);
 	}
 });
->>>>>>> 03091950df28286c028b02b78d4ef35e2b3a1d80
+
