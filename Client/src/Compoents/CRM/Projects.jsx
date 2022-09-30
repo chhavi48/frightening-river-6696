@@ -39,7 +39,7 @@ const Projects = () => {
 						{product.map((item) => (
 							<tr>
 								<td>
-									{item.name}{" "}
+									{item.name}
 									<span>
 										<Modals
 											name={item.name}
