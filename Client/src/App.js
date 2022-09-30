@@ -1,3 +1,4 @@
+import Navbar from "./Compoents/Navbar/Navbar";
 import Routing from "./Compoents/Routing";
 function App() {
 	return (

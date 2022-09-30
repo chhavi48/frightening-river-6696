@@ -1,0 +1,31 @@
+.log {
+  width: 50%;
+}
+
+.bt {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10%;
+}
+.bt Button {
+  border-radius: 25px;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .log {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .bt {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bt div {
+    width: 80%;
+  }
+}

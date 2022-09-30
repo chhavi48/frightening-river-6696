@@ -8,6 +8,8 @@ import Reports from "./CRM/Reports";
 import Settings from "./CRM/Settings";
 import Team from "./CRM/Team";
 import Time from "./CRM/Time";
+import Signup from './Pages/signupLogin/Signup';
+import Login from './Pages/signupLogin/Login';
 const Routing = () => {
 	return (
 		<>
@@ -21,6 +23,8 @@ const Routing = () => {
 				<Route path='/team' element={<Team />} />
 				<Route path='/settings' element={<Settings />} />
 				<Route path='/clients' element={<Clients />} />
+				<Route path='/signup' element={<Signup />} />
+				<Route path='/login' element={<Login />} />
 			</Routes>
 		</>
 	);

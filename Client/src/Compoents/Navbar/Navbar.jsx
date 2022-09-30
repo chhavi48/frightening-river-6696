@@ -22,9 +22,10 @@ import {
 	ChevronDownIcon,
 	ChevronRightIcon,
 } from "@chakra-ui/icons";
-import {Link as ReachLink  } from "react-router-dom";
+import {Link as ReachLink, useNavigate  } from "react-router-dom";
 export default function Navbar() {
 	const { isOpen, onToggle } = useDisclosure();
+	const navigate = useNavigate();
 	return (
 		<Box>
 			<Flex
@@ -108,7 +109,7 @@ export default function Navbar() {
 							bg: "#57bb71",
 						}}
 						onClick={() => {
-							// navigate("/signup");
+							navigate("/signup");
 						}}
 					>
 						Sign Up
