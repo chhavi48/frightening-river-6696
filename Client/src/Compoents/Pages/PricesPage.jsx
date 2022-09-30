@@ -19,10 +19,13 @@ import {
 } from '@chakra-ui/react';
 
 import { BsCircleFill } from "react-icons/bs";
+import Footer from './Footer/Footer';
+import Navbar from '../Navbar/Navbar';
 
 export default function PricesPage  ()  {
   return (
     <div>
+      <Navbar/>
         <div className={styles.headContainer}>
           <h2 className={styles.heading}>Simple pricing</h2>
           <h4 className={styles.subheading}>Start with no commitment. Try everything. Subscribe when you love it.</h4>
@@ -232,6 +235,7 @@ export default function PricesPage  ()  {
               </List>
          </div>
         </div>
+        <Footer/>
     </div>
   )
 }

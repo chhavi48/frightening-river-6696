@@ -3,7 +3,7 @@ import {
 	Container,
 	Heading,
 	Stack,
-	Text,
+	
 	Button,
 	Icon,
 	Box,
@@ -13,10 +13,16 @@ import {
 	ListIcon,
 	Input,
 	Image,
-	Square,
+	
 } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
+import Navbar from "../../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+
+
 export default function Demo() {
+
+
 	const CircleIcon = (props) => (
 		<Icon viewBox="0 0 200 200" {...props}>
 			<path
@@ -27,6 +33,7 @@ export default function Demo() {
 	);
 	return (
 		<>
+		<Navbar/>
 			<Container maxW={"5xl"}>
 			
 				<Stack
@@ -272,7 +279,7 @@ export default function Demo() {
 					</Button>
 				</Box>
 			</Box>
-			
+			<Footer/>
 		</>
 	);
 }

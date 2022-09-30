@@ -111,7 +111,7 @@ export default function Navbar() {
 							// navigate("/signup");
 						}}
 					>
-						Sign Up
+						<Link as={ReachLink} to={"/signup"}>Sign up</Link>
 					</Button>
 				</Stack>
 			</Flex>
