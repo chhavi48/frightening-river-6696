@@ -131,24 +131,49 @@ body {
     font-size: 22px;
 }
 
-.button-div{
+.button-div {
     position: relative;
 }
 
-.title-button{
+.title-button {
     padding: 15px;
     position: absolute;
     top: -42px;
-    left: 80px;
+    left: 100px;
     font-weight: 700;
 }
-.flex-space-evenly{
+
+.flex-space-evenly {
     display: flex;
     justify-content: space-evenly;
 }
-.flex-space-between{
-    margin-top:20px;
-    display: flex;;
+
+.flex-space-between {
+    margin-top: 20px;
+    display: flex;
     justify-content: space-between;
     font-weight: 500;
 }
+
+.form-field {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+.green{
+    background: green;
+    padding: 5px 20px;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  
