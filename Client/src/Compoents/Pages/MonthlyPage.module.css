@@ -1,0 +1,100 @@
+.pageContainer{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;;
+    height: 930px;
+    width: 95%;
+    /* display: flex; */
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+}
+
+.pageContainer>div{
+    /* width: 33.333%; */
+    border-right: 0.1px solid #c1bfbf;
+    height: 100%;
+}
+
+.freebox{
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+.bar{
+    height: 4px;
+    width: 100%;
+    background-color: #D0D0D0;
+    border-radius: 1px;
+    margin-top: 20px;
+}
+
+.heading{
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.subheading{
+    font-size: 18px;
+    color: #7c7c7c;
+    font-weight: 400;
+}
+
+.pricedollar{
+    display: flex;
+    width: 20%;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.pricenum{
+    font-size: 70px;
+    color: #57BB71;
+    line-height: 70px;
+}
+
+.priceCont>h6{
+    font-size: 14px;
+    color: #7c7c7c;
+    font-weight: 550;
+}
+
+.getStarted{
+    /* border: 1px solid black; */
+    height: 48px;
+    width: 80%;
+    /* margin: auto; */
+    background-color: #57BB71;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.listCont{
+    /* border: 1px solid red; */
+    height: 20px;
+    width: 100%;
+    display: flex;
+    margin-top: 16px;
+}
+
+.checkBox{
+    height: 20px;
+    width: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9fdef;
+    border-radius: 1px;
+    margin-right: 10px;
+}
