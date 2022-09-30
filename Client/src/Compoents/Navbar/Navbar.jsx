@@ -280,9 +280,9 @@ const NAV_ITEMS = [
 		label: "Everhour",
 		href: "/",
 	},
-	{
-		label: "Integrations",
-	},
+	// {
+	// 	label: "Integrations",
+	// },
 	{
 		label: "Pricing",
 		href: "pricing",

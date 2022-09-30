@@ -1,0 +1,49 @@
+.txt {
+  font-family: "geomanist-book", sans-serif;
+  font-weight: 500;
+  color: #333;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.log {
+  width: 50%;
+  padding: 10px;
+  margin: 40px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bt {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10%;
+}
+.bt Button {
+  border-radius: 25px;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+
+  .tt {
+    width: 90%;
+  }
+
+
+  .log {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .bt {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bt div {
+    width: 80%;
+  }
+}

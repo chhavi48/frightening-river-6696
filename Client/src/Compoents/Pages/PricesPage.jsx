@@ -15,13 +15,12 @@ import {
   List,
   ListItem,
   ListIcon,
-  OrderedList,
-  UnorderedList,
+  
 } from '@chakra-ui/react';
-// import { BsCircleFill } from 'react-icons/fa'
-import { BsCircleFill, MdCheckCircle } from "react-icons/bs";
 
-const PricesPage = () => {
+import { BsCircleFill } from "react-icons/bs";
+
+export default function PricesPage  ()  {
   return (
     <div>
         <div className={styles.headContainer}>
@@ -237,4 +236,3 @@ const PricesPage = () => {
   )
 }
 
-export default PricesPage

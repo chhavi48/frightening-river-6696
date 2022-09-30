@@ -10,12 +10,14 @@ import Settings from "./CRM/Settings";
 import Team from "./CRM/Team";
 import Time from "./CRM/Time";
 import Demo from "./Pages/Demo/DemoPage";
+import PricesPage from "./Pages/PricesPage";
 const Routing = () => {
 	return (
 		<>
 			<Routes>
 				<Route path='/' element={<Landing />} />
 				<Route path='/demo' element={<Demo/>} />
+				<Route path='/pricing' element={<PricesPage/>} />
 				{/* this is crm Routing pls make sure you does not add your rout between them */}
 				<Route path='/home' element={<Home />} />
 				<Route path='/time' element={<Time />} />
@@ -26,6 +28,7 @@ const Routing = () => {
 			
 				<Route path='/settings' element={<Settings />} />
 				<Route path='/clients' element={<Clients />} />
+
 			</Routes>
 			<h1>Hello</h1>
 		</>
