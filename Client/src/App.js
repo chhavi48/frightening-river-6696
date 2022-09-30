@@ -1,3 +1,4 @@
+import PricesPage from "./Compoents/Pages/PricesPage";
 import Routing from "./Compoents/Routing";
 function App() {
 	return (
