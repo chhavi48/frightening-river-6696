@@ -13,16 +13,17 @@ import Demo from "./Pages/Demo/DemoPage";
 import PricesPage from "./Pages/PricesPage";
 import Login from "./Pages/signupLogin/Login";
 import Signup from "./Pages/signupLogin/Signup";
+import ClientAdd from "./CRM/ClientAdd"
 const Routing = () => {
 	return (
 		<>
 			<Routes>
 				<Route path='/' element={<Landing />} />
-				<Route path='/demo' element={<Demo/>} />
-				<Route path='/pricing' element={<PricesPage/>} />
-				<Route path='/signup' element={<Signup/>} />
-				<Route path='/login' element={<Login/>} />
-				<Route path='/pricing' element={<PricesPage/>} />
+				<Route path='/demo' element={<Demo />} />
+				<Route path='/pricing' element={<PricesPage />} />
+				<Route path='/signup' element={<Signup />} />
+				<Route path='/login' element={<Login />} />
+				<Route path='/pricing' element={<PricesPage />} />
 				{/* this is crm Routing pls make sure you does not add your rout between them */}
 				<Route path='/home' element={<Home />} />
 				<Route path='/time' element={<Time />} />
@@ -30,11 +31,10 @@ const Routing = () => {
 				<Route path='/projects/create' element={<ProjectAdd />} />
 				<Route path='/reports' element={<Reports />} />
 				<Route path='/team' element={<Team />} />
-			
 				<Route path='/settings' element={<Settings />} />
 				<Route path='/clients' element={<Clients />} />
+				<Route path='/clients/create' element={<ClientAdd />} />
 			</Routes>
-			<h1>Hello</h1>
 		</>
 	);
 };

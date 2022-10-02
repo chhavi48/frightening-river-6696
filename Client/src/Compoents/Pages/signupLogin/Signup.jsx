@@ -1,83 +1,115 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button, Input, Text } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
 import { BsApple } from "react-icons/bs";
 import "./signup.css";
 import Navbar from "./../../Navbar/Navbar";
+import { useDispatch } from "react-redux";
+import { signupRequest } from "../../../Redux/Auth/auth.actions";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  return (
-    <Box
-      className="log1"
-      w="100%"
-      h="150vh"
-      fontFamily="Inter, sans-serif"
-      fontSize={"16px"}
-      fontWeight="400"
-    >
-      <Navbar />
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
 
-      <Box className="heading">
-        <Text textAlign={"center"}>
-          Make your team more productive with Everhour
-        </Text>
-      </Box>
+	const onSubmitHandler = () => {
+		dispatch(signupRequest({ email, password }))
+      .then((r) => {
+        console.log(r.data.state)
+				if (r.data) {
+					return navigate("/login");
+				}
+			})
+			.catch((e) => {
+				console.log(e);
+			});
+	};
+	return (
+		<Box
+			className='log1'
+			w='100%'
+			h='150vh'
+			fontFamily='Inter, sans-serif'
+			fontSize={"16px"}
+			fontWeight='400'
+		>
+			<Navbar />
 
-      <Text
-        fontFamily={"geomanist-book, sans-serif"}
-        fontWeight="400"
-        fontSize="1.125rem"
-        lineHeight="1.44"
-        textAlign={"center"}
-        color="#333"
-      >
-        Join 3,500+ customers who use Everhour to track time and plan their
-        future projects more effectively
-      </Text>
+			<Box className='heading'>
+				<Text textAlign={"center"}>
+					Make your team more productive with Everhour
+				</Text>
+			</Box>
 
-      <Box className="log">
-        <Box className="bt">
-          <Box w={"40%"}>
-            <Button>
-              <FcGoogle size={"25px"} />
-              Signup via Google
-            </Button>
-          </Box>
-          <Box w={"40%"}>
-            <Button>
-              <BsApple size={"25px"} />
-              Signup via Apple
-            </Button>
-          </Box>
-        </Box>
+			<Text
+				fontFamily={"geomanist-book, sans-serif"}
+				fontWeight='400'
+				fontSize='1.125rem'
+				lineHeight='1.44'
+				textAlign={"center"}
+				color='#333'
+			>
+				Join 3,500+ customers who use Everhour to track time and plan their
+				future projects more effectively
+			</Text>
 
-        <Box color={"white"} w="90%" margin={"auto"} p="2rem">
-          <label>Email</label>
-          <Input placeholder="Email" borderRadius={"0px"} mt="10px" />
+			<Box className='log'>
+				<Box className='bt'>
+					<Box w={"40%"}>
+						<Button>
+							<FcGoogle size={"25px"} />
+							Signup via Google
+						</Button>
+					</Box>
+					<Box w={"40%"}>
+						<Button>
+							<BsApple size={"25px"} />
+							Signup via Apple
+						</Button>
+					</Box>
+				</Box>
 
-          <Box mt="20px">
-            <label> Password</label>
-            <Input
-              placeholder="Password"
-              borderRadius={"0px"}
-              mt="10px"
-              required="true"
-            />
-          </Box>
+				<Box w='90%' margin={"auto"} p='2rem'>
+					<label>Email</label>
+					<Input
+						placeholder='Email'
+						borderRadius={"0px"}
+						mt='10px'
+						onChange={(e) => setEmail(e.target.value)}
+					/>
 
-          <Text textAlign="end" textDecoration={"underline"} mt="10px">
-            Forget password?
-          </Text>
+					<Box mt='20px'>
+						<label> Password</label>
+						<Input
+							placeholder='Password'
+							borderRadius={"0px"}
+							mt='10px'
+							required='true'
+							onChange={(e) => setPassword(e.target.value)}
+						/>
+					</Box>
 
-          <Box p={"1rem"}>
-            <Button fontWeight={200}  p="1.5rem" bg="#57bb71" w="100%">
-              Get Started
-            </Button>
-          </Box>
-        </Box>
-      </Box>
-    </Box>
-  );
+					<Text textAlign='end' textDecoration={"underline"} mt='10px'>
+						Forget password?
+					</Text>
+
+					<Box p={"1rem"}>
+						<Button
+							fontWeight={200}
+							p='1.5rem'
+							bg='#57bb71'
+							w='100%'
+							onClick={onSubmitHandler}
+						>
+							Get Started
+						</Button>
+					</Box>
+				</Box>
+			</Box>
+		</Box>
+	);
 };
 
 export default Signup;
