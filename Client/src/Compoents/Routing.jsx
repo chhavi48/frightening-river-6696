@@ -13,6 +13,7 @@ import Demo from "./Pages/Demo/DemoPage";
 import PricesPage from "./Pages/PricesPage";
 import Login from "./Pages/signupLogin/Login";
 import Signup from "./Pages/signupLogin/Signup";
+import ClientAdd from "./CRM/ClientAdd"
 const Routing = () => {
 	return (
 		<>
@@ -32,6 +33,7 @@ const Routing = () => {
 				<Route path='/team' element={<Team />} />
 				<Route path='/settings' element={<Settings />} />
 				<Route path='/clients' element={<Clients />} />
+				<Route path='/clients/create' element={<ClientAdd />} />
 			</Routes>
 		</>
 	);

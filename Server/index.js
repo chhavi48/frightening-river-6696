@@ -1,4 +1,3 @@
-
 const express = require("express");
 const { connection } = require("./config/db");
 const { clientController } = require("./route/client");
@@ -17,7 +16,6 @@ app.get("/", (req, res) => {
 // app.use(authentication)
 
 app.use("/user", userController);
-
 app.use("/project", projectController);
 app.use("/client", clientController);
 
@@ -29,4 +27,3 @@ app.listen(PORT, async () => {
 		console.log("Does not Connect To Database", e);
 	}
 });
-

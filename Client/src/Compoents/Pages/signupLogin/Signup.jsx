@@ -6,14 +6,25 @@ import "./signup.css";
 import Navbar from "./../../Navbar/Navbar";
 import { useDispatch } from "react-redux";
 import { signupRequest } from "../../../Redux/Auth/auth.actions";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
 	const dispatch = useDispatch();
+	const navigate = useNavigate();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
 	const onSubmitHandler = () => {
-		dispatch(signupRequest({ email, password }));
+		dispatch(signupRequest({ email, password }))
+      .then((r) => {
+        console.log(r.data.state)
+				if (r.data) {
+					return navigate("/login");
+				}
+			})
+			.catch((e) => {
+				console.log(e);
+			});
 	};
 	return (
 		<Box

@@ -11,15 +11,7 @@ export const signupRequest =
 	({ email, password }) =>
 	async (dispatch) => {
 		const payload = { email, password };
-		console.log(payload);
-		await axios
-			.post(`${baseURL}/user/signup`, payload)
-			.then((r) => {
-				console.log(r);
-			})
-			.catch((e) => {
-				console.log(e);
-			});
+		return await axios.post(`${baseURL}/user/signup`, payload);
 	};
 
 export const loginAPI =

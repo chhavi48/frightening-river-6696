@@ -13,10 +13,9 @@ clientController.get("/", async (req, res) => {
 	}
 });
 
-
 clientController.post("/create", async (req, res) => {
-    const newclient = new clientModel(req.body);
-    console.log(newclient)
+	const newclient = new clientModel(req.body);
+	console.log(newclient);
 	await newclient
 		.save()
 		.then(() => {
